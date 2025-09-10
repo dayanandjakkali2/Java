@@ -1,0 +1,26 @@
+public class StringComparisonDemo {
+    public static void main(String[] args) {
+        String s1 = "Hello";
+        String s2 = "Hello";
+        String s3 = "hello";
+        String s4 = new String("Hello");
+
+        // 1. equals()
+        System.out.println("equals(): " + s1.equals(s2)); // true
+        System.out.println("equals(): " + s1.equals(s3)); // false
+
+        // 2. equalsIgnoreCase()
+        System.out.println("equalsIgnoreCase(): " + s1.equalsIgnoreCase(s3)); // true
+
+        // 3. compareTo()
+        System.out.println("compareTo (s1 vs s2): " + s1.compareTo(s2)); // 0
+        System.out.println("compareTo (s1 vs s3): " + s1.compareTo(s3)); // negative
+        System.out.println("compareTo (s3 vs s1): " + s3.compareTo(s1)); // positive
+
+        // 4. == operator
+        System.out.println("== (s1 vs s2): " + (s1 == s2)); // true (same pool)
+        System.out.println("== (s1 vs s4): " + (s1 == s4)); // false (different object)
+    }
+}
+
+Answer: Shows Answer on every end of the line(comment).
