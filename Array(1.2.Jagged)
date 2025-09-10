@@ -1,0 +1,58 @@
+public class ArrayDemo {
+    public static void main(String[] args) {
+
+        // ---------------- 1. One-Dimensional Array ----------------
+        int[] oneD = {10, 20, 30, 40, 50};
+        System.out.println("1D Array Elements:");
+        for (int i = 0; i < oneD.length; i++) {
+            System.out.print(oneD[i] + " ");
+        }
+        System.out.println("\n");
+
+        // ---------------- 2. Two-Dimensional Array ----------------
+        int[][] twoD = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        System.out.println("2D Array Elements:");
+        for (int i = 0; i < twoD.length; i++) {
+            for (int j = 0; j < twoD[i].length; j++) {
+                System.out.print(twoD[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        // ---------------- 3. Jagged Array (Array of Arrays) ----------------
+        int[][] jagged = new int[3][];
+        jagged[0] = new int[]{1, 2};
+        jagged[1] = new int[]{3, 4, 5};
+        jagged[2] = new int[]{6};
+
+        System.out.println("Jagged Array Elements:");
+        for (int i = 0; i < jagged.length; i++) {
+            for (int j = 0; j < jagged[i].length; j++) {
+                System.out.print(jagged[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+Answer:
+1D Array Elements:
+10 20 30 40 50 
+
+2D Array Elements:
+1 2 3 
+4 5 6 
+7 8 9 
+
+Jagged Array Elements:
+1 2 
+3 4 5 
+6 
+
