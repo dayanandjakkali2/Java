@@ -1,2 +1,2 @@
-# Java String /Variable/Methods/Array
+# Java String /Variable/Array
 String /Variable/Methods
